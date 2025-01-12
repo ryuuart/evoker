@@ -1,0 +1,19 @@
+[package]
+name = "syphon-sys"
+version = "0.1.6"
+edition = "2021"
+build = "build.rs"
+links = "Syphon"
+
+[dependencies]
+objc2 = "0.5.2"
+objc2-foundation = { version = "0.2.2", features = [
+    "NSDictionary",
+    "NSString",
+] }
+objc2-metal = { version = "0.2.2", features = [
+    "MTLCommandBuffer",
+    "MTLCommandQueue",
+    "MTLDevice",
+    "MTLTexture",
+] }
