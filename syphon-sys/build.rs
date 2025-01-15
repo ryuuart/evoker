@@ -24,7 +24,6 @@ fn main() {
         .expect("Syphon-Framework build failed.");
 
     println!("cargo::rustc-link-search=framework={}", &out_dir);
-    println!("cargo::rustc-link-arg=-Wl,-rpath,{}", &out_dir);
     println!("cargo::rustc-link-lib=framework=CoreGraphics");
     println!("cargo::rustc-link-lib=framework=Syphon");
     println!("cargo::metadata=OUT_DIR={}", &out_dir);
