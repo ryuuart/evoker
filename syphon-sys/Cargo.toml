@@ -1,6 +1,6 @@
 [package]
 name = "syphon-sys"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 build = "build.rs"
 links = "Syphon"
@@ -19,3 +19,6 @@ objc2-metal = { version = "0.2.2", features = [
     "MTLResource",
     "MTLTexture",
 ] }
+
+[profile.dev]
+rpath = true
