@@ -33,8 +33,8 @@ impl SyphonMetalServer {
         #[unsafe(method(publishFrameTexture:onCommandBuffer:imageRegion:flipped:))]
         pub fn publish_frame_texture(
             &self,
-            texture_to_publish: *mut ProtocolObject<dyn MTLTexture>,
-            command_buffer: *mut ProtocolObject<dyn MTLCommandBuffer>,
+            texture_to_publish: *const ProtocolObject<dyn MTLTexture>,
+            command_buffer: *const ProtocolObject<dyn MTLCommandBuffer>,
             image_region: &NSRect,
             is_flipped: bool,
         );
