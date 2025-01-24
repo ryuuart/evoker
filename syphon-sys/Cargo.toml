@@ -1,21 +1,13 @@
 [package]
 name = "syphon-sys"
-version = "0.2.2"
+version = "0.2.3"
 edition = "2021"
 build = "build.rs"
 links = "Syphon"
 
 [dependencies]
-objc2 = "0.5.2"
-objc2-foundation = { version = "0.2.2", features = [
-    "NSDictionary",
-    "NSGeometry",
-    "NSString",
-] }
-objc2-metal = { version = "0.2.2", features = [
-    "MTLCommandBuffer",
-    "MTLCommandQueue",
-    "MTLDevice",
-    "MTLResource",
-    "MTLTexture",
-] }
+objc2 = "0.6.0"
+objc2-foundation = "0.3.0"
+objc2-metal = "0.3.0"
+skia-safe = { version = "0.81.0", features = ["all-macos"] }
+taffy = { version = "0.7.5", features = ["serde"] }
