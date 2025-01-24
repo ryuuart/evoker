@@ -58,7 +58,7 @@ impl SyphonMetalServer {
     /// Useful for when we need to control the pipeline outside with the device
     pub fn from_device(
         name: &str,
-        device: *mut ProtocolObject<dyn MTLDevice>,
+        device: Retained<ProtocolObject<dyn MTLDevice>>,
     ) -> Retained<SyphonMetalServer> {
         let instance = SyphonMetalServer::alloc();
         let name = NSString::from_str(name);
