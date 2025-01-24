@@ -35,7 +35,7 @@ impl SyphonMetalServer {
             &self,
             texture_to_publish: *const ProtocolObject<dyn MTLTexture>,
             command_buffer: *const ProtocolObject<dyn MTLCommandBuffer>,
-            image_region: &NSRect,
+            image_region: NSRect,
             is_flipped: bool,
         );
 

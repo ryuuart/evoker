@@ -536,7 +536,7 @@ dependencies = [
 
 [[package]]
 name = "syphon-sys"
-version = "0.2.6"
+version = "0.2.7"
 dependencies = [
  "objc2",
  "objc2-foundation",
