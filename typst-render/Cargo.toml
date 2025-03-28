@@ -1,0 +1,32 @@
+[package]
+name = "open-world-game--star--12-24-2024--74dfee64-2d44-43d5-89b7-1b5f9fd9fa8b"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.39"
+color-print = "0.3.7"
+ecow = "0.2.3"
+objc2 = "0.5.2"
+objc2-app-kit = { version = "0.2.2", features = ["all"] }
+objc2-foundation = "0.2.2"
+objc2-metal = { version = "0.2.2", features = ["all"] }
+objc2-metal-kit = { version = "0.2.2", features = ["all"] }
+objc2-quartz-core = { version = "0.2.2", features = ["all"] }
+palette = "0.7.6"
+parking_lot = "0.12.3"
+rayon = "1.10.0"
+semver = "1.0.24"
+serde = "1.0.216"
+skia-safe = { version = "0.80.1", features = ["metal"] }
+taffy = "0.7.1"
+tiny-skia = "0.11.4"
+toml = "0.8.19"
+typst = "0.12.0"
+typst-kit = "0.12.0"
+typst-render = "0.12.0"
+typst-timing = "0.12.0"
+winit = "0.30.7"
+
+[features]
+embed-fonts = ["typst-kit/embed-fonts"]
