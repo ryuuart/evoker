@@ -1,0 +1,4 @@
+input = "image.typ"
+
+[world_config.font]
+font_paths = ["/Users/long/Documents/samsara/permanence/fonts"]
