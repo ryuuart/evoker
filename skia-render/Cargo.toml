@@ -1,0 +1,16 @@
+[package]
+name = "open-world-game"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nannou = "0.19.0"
+objc2 = "0.6.0"
+objc2-core-foundation = "0.3.0"
+objc2-core-graphics = "0.3.0"
+objc2-foundation = "0.3.0"
+objc2-metal = "0.3.0"
+objc2-quartz-core = "0.3.0"
+skia-safe = { version = "0.81.0", features = ["all-macos"] }
+syphon = { package = "syphon-sys", git = "https://github.com/ryuuart/evoker", branch = "main" }
+wgpu-hal = "^0.17.2"

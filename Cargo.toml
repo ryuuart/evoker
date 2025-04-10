@@ -1,4 +1,4 @@
 [workspace]
 resolver = "2"
 
-members = ["syphon-sys", "websocket-sync", "typst-render"]
+members = ["syphon-sys", "websocket-sync", "typst-render", "skia-render"]
